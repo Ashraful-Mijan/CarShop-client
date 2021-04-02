@@ -25,8 +25,6 @@ const Checkout = () => {
             },
            body:JSON.stringify(newUser)
         })
-
-        console.log(newUser)
     }
     return (
         <div className='container my-4'>

@@ -7,7 +7,6 @@ const Orders = () => {
     
     const [ordered, setOrdered] = useState([])
 
-    console.log(ordered)
     useEffect(() => {
         fetch(`https://immense-ravine-02946.herokuapp.com/getOrder/?email=${user.email}`)
             .then(res => res.json())
