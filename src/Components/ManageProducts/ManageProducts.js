@@ -8,9 +8,10 @@ const ManageProducts = () => {
             .then(res => res.json())
             .then(data => setManage(data))
     }, [])
-    // console.log(manage)
+
     return (
-        <div className="container">
+        <div className="container mt-5">
+            <h3 className="mb-3 text-success">Manage Products</h3>
             <table className="table">
                 <thead>
                     <tr>

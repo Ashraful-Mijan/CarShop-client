@@ -40,11 +40,10 @@ const AddProducts = () => {
     }
 
     return (
-        <div className='container'>
-
+        <div className='container mt-5'>
             <div className="row">
                 <div className="col-md-6">
-                    <legend>Add Products</legend>
+                    <legend className="text-success">Add Products</legend>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className="mb-3">
                             <label htmlFor="productName" className="form-label">Product Name: </label>

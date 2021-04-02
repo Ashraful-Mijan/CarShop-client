@@ -6,7 +6,7 @@ const Orders = () => {
     const [user, setUser] = useContext(UserContext)
     
     const [ordered, setOrdered] = useState([])
-    
+
     console.log(ordered)
     useEffect(() => {
         fetch(`http://localhost:9000/getOrder/?email=${user.email}`)
@@ -14,7 +14,8 @@ const Orders = () => {
             .then(data => setOrdered(data))
     }, [user.email])
     return (
-        <div className="container">
+        <div className="container mt-4">
+            <h3 className="text-success">Your Orders</h3>
             <table className="table">
                 <thead>
                     <tr>
