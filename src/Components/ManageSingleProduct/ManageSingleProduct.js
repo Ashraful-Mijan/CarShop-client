@@ -6,22 +6,18 @@ const ManageSingleProduct = ({ managepd }) => {
     const { name, price, wight, _id} = managepd;
     
 
-    // function deleteProduct(event, id) {
 
-    // }
-
-    const deleteProduct = (id) => {
+    const deleteProduct = (id, e) => {
         fetch(`http://localhost:9000/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
             .then(result => {
-                console.log('deleted successfully');
                 if (result) {
-                    // console.log(event.target.parentNode.remove)
-                    // event.target.parentNode.remove()
+                    e.target.parentNode.parentNode.remove()
                 }
             })
+        
     }
 
     return (
@@ -29,8 +25,8 @@ const ManageSingleProduct = ({ managepd }) => {
             <td>{name}</td>
             <td>{wight}</td>
             <td>${price}</td>
-            <td><button onClick={()=> deleteProduct(_id)} className="bg-light border-0 text-danger"><RiDeleteBin5Fill /></button></td>
-
+            <td><button onClick={(e)=> deleteProduct(_id,e)} className="bg-light border-0 text-danger">Delete</button>
+            </td>
         </tr>
     );
 };
