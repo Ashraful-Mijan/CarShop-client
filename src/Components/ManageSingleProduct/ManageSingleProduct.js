@@ -8,7 +8,7 @@ const ManageSingleProduct = ({ managepd }) => {
 
 
     const deleteProduct = (id, e) => {
-        fetch(`http://localhost:9000/delete/${id}`, {
+        fetch(`https://immense-ravine-02946.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
