@@ -13,7 +13,7 @@ const AddProducts = () => {
             wight: data.wight,
             imageURL: imageURL
         }
-        const url = `http://localhost:9000/addProduct`;
+        const url = `https://immense-ravine-02946.herokuapp.com/addProduct`;
         console.log(eventData)
 
         fetch(url, {

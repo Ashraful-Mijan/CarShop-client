@@ -4,7 +4,7 @@ import ManageSingleProduct from '../ManageSingleProduct/ManageSingleProduct';
 const ManageProducts = () => {
     const [manage, setManage] = useState([])
     useEffect(() => {
-        fetch('http://localhost:9000/product')
+        fetch('https://immense-ravine-02946.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setManage(data))
     }, [])

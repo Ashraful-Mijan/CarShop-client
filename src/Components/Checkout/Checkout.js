@@ -7,7 +7,7 @@ const Checkout = () => {
     const [checkData, setCheckData] = useState({})
     const [user, setUser] = useContext(UserContext)
     useEffect(() => {
-        fetch(`http://localhost:9000/checkouts/${id}`)
+        fetch(`https://immense-ravine-02946.herokuapp.com/checkouts/${id}`)
             .then(res => res.json())
             .then(data => {
                 setCheckData(...data)
@@ -18,7 +18,7 @@ const Checkout = () => {
         const newUser = {email: user.email, name: checkData.name, price: checkData.price, date: new Date() }
 
 
-        fetch('http://localhost:9000/orders', {
+        fetch('https://immense-ravine-02946.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
