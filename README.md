@@ -1,15 +1,25 @@
-# Assignment-10
-### Project Name: CarShop
+# CarShop
 
-# This Project create using: 
-react, bootstrap, react icon, react bootstrap, node.js, mongodb  
+CarShop is a single-page web application where users can buy car. This is a online CarShop platform to buy where user can choose and buy. 
 
-# Student Contact
-###### Mobile: 01785920566 
-###### Email: ashrafulmijan5@gmail.com 
+CarShop [Website](https://smart-carshop.web.app/)
 
-# Live Site Link :
-[CarShop](https://smart-carshop.web.app/)
+## Features
+ * online vehicle shop 
+ * order list 
+ * buyer database
+ * admin panel
+ * firebase Authentication
 
+## Front-End Technology
+ * React.js
+ * Bootstrap.js
+ * css3
 
-# full-stack-client-Ashraful-Mijan
+## Back-End Technology
+ * Node.js
+ * Express.js
+ * Mongo DB
+
+ [Back-End-Repo](https://github.com/Ashraful-Mijan/CarShop-server)
+
